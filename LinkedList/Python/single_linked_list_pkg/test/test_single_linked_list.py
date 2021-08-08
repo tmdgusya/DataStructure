@@ -40,3 +40,12 @@ class SingleLinkedListTest(unittest.TestCase):
 
         linkedList.append(node_one)
         self.assertTrue(linkedList.isExist(node_one))
+
+    def test_return_false_if_not_exist_node_in_linked_list(self):
+        linkedList = SingleLinkedList()
+
+        node_one = Node("this")
+        node_other = Node("Other")
+        linkedList.append(node_one)
+
+        self.assertFalse(linkedList.isExist(node_other));

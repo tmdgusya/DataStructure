@@ -34,4 +34,19 @@ LinkedList 는 **선형적인 구조를 지니고 있으므로, 탐색 및 추�
 
 ![image](https://user-images.githubusercontent.com/57784077/128628593-80f32b4c-f5c6-48a6-a915-e979625491f4.png)
 
-- INSERT 나 DELETE 를 시도할때, **결국 head 부터 시작해서 원하는 위치에 넣어야 하므로 O(N) 번 탐색이 일어난 뒤, 추가하거나 삭제**한다.
+**INSERT 나 DELETE 를 시도할때 insert_after 나 deleteAfter 로 접근시 O(1)로 가능**하다.
+
+```python
+  # O(1) Time Complexity
+    def append_after(self, prevNode, afterNode):
+        afterNode.next = prevNode.next
+        prevNode.next = afterNode
+
+  # O(1) Time Complexity
+    def remove_after(self, node):
+        prenode = node.next
+        node.next = node.next.next
+        prennode = None
+```
+
+- 음 그런데 **해당 노드로 붙어서 삭제하려면 결국 O(N) 으로 Singly 에서는 될수 밖에 없어서 이때는 Doubly Linked List 를 써야한다. Singly 에서는 O(1) 으로 밖에 할 수 없다.** (중간 값을 지운다는 가정 하)

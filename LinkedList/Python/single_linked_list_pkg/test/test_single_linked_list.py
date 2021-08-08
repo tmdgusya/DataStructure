@@ -49,3 +49,13 @@ class SingleLinkedListTest(unittest.TestCase):
         linkedList.append(node_one)
 
         self.assertFalse(linkedList.isExist(node_other));
+    
+    def test_get_correct_size_linked_list(self):
+
+        linkedList = SingleLinkedList()
+
+        node_one = Node("This")
+
+        linkedList.append(node_one);
+
+        self.assertEqual(linkedList.size(), 1);

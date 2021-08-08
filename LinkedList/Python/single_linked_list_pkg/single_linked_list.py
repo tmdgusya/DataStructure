@@ -46,6 +46,10 @@ class SingleLinkedList(object):
             return False
         else:
             cur = self.head;
+
+            if cur == node:
+                return True
+
             while cur.next != None:
                 if cur == node:
                     return True

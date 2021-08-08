@@ -28,6 +28,14 @@ class SingleLinkedListTest(unittest.TestCase):
         linkedList.append_with_index(node_two, 1)
 
         self.assertEqual(node_one.next, node_two)
+    
+    def test_insert_head_if_not_exist_append_with_index(self):
+        linkedList = SingleLinkedList()
+
+        node_one = Node("header")
+
+        linkedList.append(node_one)
+        self.assertEqual(linkedList.head, node_one)
 
 
     def test_return_ture_if_success_remove_node_in_linked_list(self):

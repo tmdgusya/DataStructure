@@ -50,3 +50,7 @@ LinkedList 는 **선형적인 구조를 지니고 있으므로, 탐색 및 추�
 ```
 
 - 음 그런데 **해당 노드로 붙어서 삭제하려면 결국 O(N) 으로 Singly 에서는 될수 밖에 없어서 이때는 Doubly Linked List 를 써야한다. Singly 에서는 remove_after 로 O(1) 으로 밖에 할 수 없다.** (중간 값을 지운다는 가정 하)
+
+**Search Time Complexity**
+
+**탐색에는 무조건 O(n) 의 시간복잡도를 가진다. 왜냐하면 head node 로 부터 시작해서 최대 노드 연결지의 종단 지점까지 next 를 타고 탐색을 해야하기 때문**이다.

@@ -50,6 +50,21 @@ class SingleLinkedListTest(unittest.TestCase):
         linkedList.append(node_one)
         self.assertEqual(linkedList.head, node_one)
 
+    def test_remove_after(self):
+        linkedList = SingleLinkedList()
+
+        node_one = Node("One")
+        node_two = Node("Two")
+        node_thr = Node("Thr")
+
+        linkedList.append(node_one)
+        linkedList.append(node_two)
+        linkedList.append(node_thr)
+
+        linkedList.remove_after(node_one)
+        
+        self.assertEqual(node_one.next, node_thr);
+
 
     def test_return_ture_if_success_remove_node_in_linked_list(self):
         linkedList = SingleLinkedList()

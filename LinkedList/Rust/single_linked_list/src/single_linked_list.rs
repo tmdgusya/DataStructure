@@ -1,12 +1,13 @@
-struct Node<T> {
-    data: T,
-    node: Node
+pub struct Node<T> {
+    pub data: T,
+    pub next: Option<Box<Node<T>>>
 }
 
-pub struct SingleLinkedList {
-    head: Node
+pub struct SingleLinkedList<T> {
+    pub head: Option<Node<T>>
 }
 
-impl SingleLinkedList {
+impl<T> SingleLinkedList<T> {
     
+
 }

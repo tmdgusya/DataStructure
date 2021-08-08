@@ -1,7 +1,7 @@
 # Linked List
 
-**Linked List 란 그들의 메모리 주소값으로 연결되는 선형적인 데이터 collection** 이라고 할 수 있습니다. 
-그러므로 모든 Node 는 next position 을 가집니다. 
+**Linked List 란 그들의 메모리 주소값으로 연결되는 선형적인 데이터 collection** 이라고 할 수 있습니다.
+그러므로 모든 Node 는 next position 을 가집니다.
 대부분 data 와 nextnode 의 reference 를 가집니다. Node 를 python code 로 표현하면 아래와 같습니다.
 
 ```python
@@ -26,8 +26,12 @@ LinkedList 는 **선형적인 구조를 지니고 있으므로, 탐색 및 추�
 
 ### Singly Linked List
 
-**단일 연결 리스트(Singly Linked List)**안의 Node 는 **data 와 next filed 를 가집니다.** 
+**단일 연결 리스트(Singly Linked List)**안의 Node 는 **data 와 next filed 를 가집니다.**
 
 [Python Singly Linked List](https://github.com/tmdgusya/DataStructure/tree/master/LinkedList/Python)
 
+**INSERT OR DELETE TIME COMPLEXITY**
 
+![image](https://user-images.githubusercontent.com/57784077/128628593-80f32b4c-f5c6-48a6-a915-e979625491f4.png)
+
+- INSERT 나 DELETE 를 시도할때, **결국 head 부터 시작해서 원하는 위치에 넣어야 하므로 O(N) 번 탐색이 일어난 뒤, 추가하거나 삭제**한다.

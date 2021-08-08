@@ -49,4 +49,4 @@ LinkedList 는 **선형적인 구조를 지니고 있으므로, 탐색 및 추�
         prennode = None
 ```
 
-- 음 그런데 **해당 노드로 붙어서 삭제하려면 결국 O(N) 으로 Singly 에서는 될수 밖에 없어서 이때는 Doubly Linked List 를 써야한다. Singly 에서는 O(1) 으로 밖에 할 수 없다.** (중간 값을 지운다는 가정 하)
+- 음 그런데 **해당 노드로 붙어서 삭제하려면 결국 O(N) 으로 Singly 에서는 될수 밖에 없어서 이때는 Doubly Linked List 를 써야한다. Singly 에서는 remove_after 로 O(1) 으로 밖에 할 수 없다.** (중간 값을 지운다는 가정 하)

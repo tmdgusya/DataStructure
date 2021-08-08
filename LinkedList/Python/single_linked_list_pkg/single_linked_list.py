@@ -16,7 +16,7 @@ class SingleLinkedList(object):
             cur.next = node
     
     # O(1) Time Complexity
-    def append_with_other_node(self, prevNode, afterNode):
+    def append_after(self, prevNode, afterNode):
         afterNode.next = prevNode.next
         prevNode.next = afterNode
 

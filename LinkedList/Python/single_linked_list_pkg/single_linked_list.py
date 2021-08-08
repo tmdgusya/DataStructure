@@ -54,6 +54,13 @@ class SingleLinkedList(object):
                     next = None # Closing Connection Other Node => GC Collecting Target
                     return True
         return False
+    
+    # O(1) Time Complexity
+    def remove_after(self, node):
+        next_node = node.next
+        node.next = node.next.next
+        if next_node != None:
+            next_node = None
 
     # O(n) Time Complexity
     def isExist(self, node):

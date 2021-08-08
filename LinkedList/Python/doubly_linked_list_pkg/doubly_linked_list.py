@@ -6,6 +6,8 @@ class DoublyLinkedList(object):
 
     def append_front(self, node):
         if self.head == None:
+            self.head = node
+        else:
             node.next = self.head
             self.head = node
             node.prev = None

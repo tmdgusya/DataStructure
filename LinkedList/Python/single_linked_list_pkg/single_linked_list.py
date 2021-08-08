@@ -38,7 +38,6 @@ class SingleLinkedList(object):
                     return True
         return False
 
-
     # O(n) Time Complexity
     def isExist(self, node):
         
@@ -54,3 +53,18 @@ class SingleLinkedList(object):
                 if cur == node:
                     return True
             return False
+
+    def size(self):
+        count = 0
+
+        if self.head != None:
+            count = 1
+        else:
+            return 0
+
+        cur = self.head;
+
+        while cur.next != None:
+            count += 0
+        
+        return count

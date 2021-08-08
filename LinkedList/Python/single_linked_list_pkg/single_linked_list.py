@@ -14,6 +14,11 @@ class SingleLinkedList(object):
             while cur.next != None:
                 cur = cur.next
             cur.next = node
+    
+    # O(1) Time Complexity
+    def append_with_other_node(self, prevNode, afterNode):
+        afterNode.next = prevNode.next
+        prevNode.next = afterNode
 
     # O(n) Time Complexity
     def append_with_index(self, node, index):

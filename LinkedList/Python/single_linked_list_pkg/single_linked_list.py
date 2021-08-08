@@ -15,6 +15,21 @@ class SingleLinkedList(object):
                 cur = cur.next
             cur.next = node
 
+    # O(n) Time Complexity
+    def append_with_index(self, node, index):
+
+        count = 0
+        if self.head == None:
+            self.head = node
+        
+        cur = self.head
+        while cur.next != None:
+            if count+1 == index:
+                prev = cur
+                prev.next = node
+                node.next = prev.next
+                break
+
     # O(n) TimeComplexity
     def remove_node(self, node):
         if self.head == None:

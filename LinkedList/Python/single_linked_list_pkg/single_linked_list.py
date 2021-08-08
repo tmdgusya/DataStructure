@@ -29,6 +29,8 @@ class SingleLinkedList(object):
                         next = None # Closing Connection Other Node => GC Collecting Target
                     else:
                         prev.next = None
+                    return True
+        return False
 
 
     # O(n) Time Complexity

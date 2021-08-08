@@ -2,7 +2,6 @@
 
 모든 자료구조를 직접 만들어 봅니다. 각 언어별로 만들되 아래와 같은 폴더명으로 짓습니다.
 
-
 ## Folder Convention
 
 ```
@@ -26,3 +25,11 @@ TestCode 를 작성합니다. 자료구조가 정확히 작동하는지를 확�
 시간복잡도에 관한 글이나 문서는 폴더 내부에 README.md 로 정리합니다.
 
 이에 대한 질문과 토론은 ISSUE 를 통해 얘기합니다.
+
+## Link
+
+### Linked List
+
+- [Linked List](https://github.com/tmdgusya/DataStructure/tree/master/LinkedList)
+
+  - [Single Linked List](https://github.com/tmdgusya/DataStructure/blob/master/LinkedList/Python/single_linked_list_pkg/single_linked_list.py)

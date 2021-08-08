@@ -30,11 +30,8 @@ class SingleLinkedList(object):
             while prev.next != None:
                 next = prev.next
                 if next == node:
-                    if next.next != None:
-                        prev.next = next.next
-                        next = None # Closing Connection Other Node => GC Collecting Target
-                    else:
-                        prev.next = None
+                    prev.next = next.next
+                    next = None # Closing Connection Other Node => GC Collecting Target
                     return True
         return False
 

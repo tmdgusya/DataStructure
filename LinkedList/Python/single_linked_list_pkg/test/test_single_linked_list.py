@@ -59,3 +59,8 @@ class SingleLinkedListTest(unittest.TestCase):
         linkedList.append(node_one);
 
         self.assertEqual(linkedList.size(), 1);
+
+    def test_get_size_return_zero_if_not_exist_node_in_linked_list(self):
+        linkedList = SingleLinkedList()
+
+        self.assertEqual(linkedList.size(), 0);

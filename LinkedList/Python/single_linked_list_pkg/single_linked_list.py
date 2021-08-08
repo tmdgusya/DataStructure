@@ -21,6 +21,12 @@ class SingleLinkedList(object):
             return False
         else:
             prev = self.head
+
+            if prev == node:
+                self.head = None
+                prev = None
+                return True
+
             while prev.next != None:
                 next = prev.next
                 if next == node:

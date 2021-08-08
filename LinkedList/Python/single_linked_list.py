@@ -15,6 +15,22 @@ class SingleLinkedList(object):
                 cur = cur.next
             cur.next = node
 
+    # O(n) TimeComplexity
+    def remove_node(self, node):
+        if self.head == None:
+            return False
+        else:
+            prev = self.head
+            while prev.next != None:
+                next = prev.next
+                if next == node:
+                    if next.next != None:
+                        prev.next = next.next
+                        next = None # Closing Connection Other Node => GC Collecting Target
+                    else:
+                        prev.next = None
+
+
     # O(n) Time Complexity
     def isExist(self, node):
         

@@ -23,3 +23,12 @@ class SingleLinkedListTest(unittest.TestCase):
 
         linkedList.append(node_one);
         self.assertTrue(linkedList.remove_node(node_one));
+
+    def test_return_false_if_fail_remove_node_in_linked_list(self):
+        linkedList = SingleLinkedList()
+
+        node_one = Node("header")
+        other_node = Node("Other Node")
+
+        linkedList.append(other_node)
+        self.assertFalse(linkedList.remove_node(node_one))
